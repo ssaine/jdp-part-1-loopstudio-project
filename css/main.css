@@ -1,0 +1,224 @@
+/* Basic CSS Reset */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 55%);
+}
+
+.container {
+  padding: 1.5rem 2.25rem;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  /* background-image: url(../assets/images/image-hero.jpg); */
+  background-image: url(../assets/images/image-hero.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 3.2rem 0rem;
+  min-height: 700px;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul,
+.secondary-nav-wrapper ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul {
+  text-align: right;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+.secondary-nav-wrapper ul li {
+  margin-right: 35px;
+}
+nav ul a,
+.secondary-nav-wrapper ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.introduction-wrapper {
+  margin-top: 8rem;
+  width: 56%;
+  border: 2px solid;
+  padding: 2.4rem 3rem;
+}
+
+.introduction-wrapper h1 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4.25rem;
+  letter-spacing: 3px;
+  line-height: 1.1;
+}
+
+main {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+
+.about-section {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+.about-section .about-image-wrapper {
+  width: 50%;
+}
+
+.about-image-wrapper img {
+  width: 100%;
+}
+
+.about-section .about-content-wrapper {
+  width: 50%;
+  padding: 6rem;
+  /* margin-top: 12rem;
+  margin-left: -8rem; */
+  background-color: white;
+  position: relative;
+  left: -10rem;
+  top: 10rem;
+}
+
+.about-content-wrapper h2 {
+  color: hsl(0, 0%, 0%);
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.about-content-wrapper p {
+  line-height: 1.6;
+}
+
+.creations-section-header {
+  display: flex;
+  margin-bottom: 5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.creations-section-header h2 {
+  color: hsl(0, 0%, 0%);
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.creations-section-header .all-creations-link {
+  display: block;
+  padding: 0.8rem 3.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 0%);
+  border: 2px solid;
+  position: relative;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+
+.creations-images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
+.creations-images-wrapper .creation-card {
+  width: calc(100% / 4 - 2.5rem);
+  margin: 1.5rem 1.25rem;
+  position: relative;
+}
+
+.creation-card img {
+  width: 100%;
+}
+
+.creation-card figcaption {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    175deg,
+    hsla(0, 0%, 0%, 0.1),
+    hsla(0, 0%, 0%, 0.1),
+    hsla(0, 0%, 0%, 0.9)
+  );
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  padding-bottom: 2.2rem;
+  padding-left: 2.25rem;
+  line-height: 1.2;
+}
+
+footer {
+  background-color: hsl(0, 0%, 0%);
+  padding: 1.75rem 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondary-nav-wrapper .logo {
+  display: block;
+  height: 24px;
+}
+
+.secondary-nav-wrapper .secondary-nav-container {
+  margin-top: 1.75rem;
+  color: white;
+}
+
+.social-and-copyright-wrapper {
+  text-align: right;
+}
+
+.social-icons-container .social-icon {
+  padding-left: 15px;
+}
+
+.social-and-copyright-wrapper .copyright-container {
+  margin-top: 1.75rem;
+}
